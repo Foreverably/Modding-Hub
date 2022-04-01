@@ -16,6 +16,9 @@ namespace OcuMods
 {
     public partial class Form1 : Form
     {
+
+        private const Int16 CurrentVersion = 1;
+
         public Form1()
         {
             InitializeComponent();
