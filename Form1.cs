@@ -100,6 +100,11 @@ namespace OcuMods
                 DisableButton("UnityExplorer");
                 DisableButton("GCosmetics");
             }
+            else
+            {
+                VrHeadset.BringToFront();
+                MessageBox.Show("Select your VR Type then restart the application");
+            }
         }
 
         private void siticoneButton4_Click(object sender, EventArgs e)
@@ -279,6 +284,22 @@ namespace OcuMods
         private void listView1_Click(object sender, EventArgs e)
         {
             ContextMenu.Visible = false;
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Foreverably/Modding-Hub/releases");
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void siticoneButton6_Click_2(object sender, EventArgs e)
+        {
+            var flags = new ModdingHub.Launcher();
+            flags.ShowDialog();
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -11,9 +12,9 @@ using System.Windows.Forms;
 
 namespace ModdingHub
 {
-    public partial class Flags : Form
+    public partial class Launcher : Form
     {
-        public Flags()
+        public Launcher()
         {
             InitializeComponent();
             var attribute = DWMWINDOWATTRIBUTE.DWMWA_WINDOW_CORNER_PREFERENCE;
@@ -42,14 +43,16 @@ namespace ModdingHub
                                                          DWMWINDOWATTRIBUTE attribute,
                                                          ref DWM_WINDOW_CORNER_PREFERENCE pvAttribute,
                                                          uint cbAttribute);
-        private void Flags_Load(object sender, EventArgs e)
+        private void Launcher_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
+        private void siticoneTileButton1_Click(object sender, EventArgs e)
         {
-
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "SoundBoard.exe";
+            Process.Start(startInfo);
         }
     }
 }
