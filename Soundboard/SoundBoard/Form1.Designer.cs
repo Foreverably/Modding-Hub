@@ -33,11 +33,11 @@ namespace SoundBoard
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SoundBoardd));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.otherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveSoundboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportToWebToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.otherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -62,6 +62,8 @@ namespace SoundBoard
             this.label1 = new System.Windows.Forms.Label();
             this.siticoneButton2 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton1 = new Siticone.UI.WinForms.SiticoneButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.siticoneShadowPanel1.SuspendLayout();
@@ -90,36 +92,36 @@ namespace SoundBoard
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // otherToolStripMenuItem
-            // 
-            this.otherToolStripMenuItem.Name = "otherToolStripMenuItem";
-            this.otherToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
-            this.otherToolStripMenuItem.Text = "Other";
-            // 
             // saveSoundboardToolStripMenuItem
             // 
             this.saveSoundboardToolStripMenuItem.Name = "saveSoundboardToolStripMenuItem";
-            this.saveSoundboardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveSoundboardToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.saveSoundboardToolStripMenuItem.Text = "Save Soundboard";
             // 
             // exportToWebToolStripMenuItem
             // 
             this.exportToWebToolStripMenuItem.Name = "exportToWebToolStripMenuItem";
-            this.exportToWebToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exportToWebToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.exportToWebToolStripMenuItem.Text = "Export to Web";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(163, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // otherToolStripMenuItem
+            // 
+            this.otherToolStripMenuItem.Name = "otherToolStripMenuItem";
+            this.otherToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            this.otherToolStripMenuItem.Text = "Other";
             // 
             // button3
             // 
@@ -232,13 +234,13 @@ namespace SoundBoard
             // upToolStripMenuItem
             // 
             this.upToolStripMenuItem.Name = "upToolStripMenuItem";
-            this.upToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.upToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.upToolStripMenuItem.Text = "Up";
             // 
             // downToolStripMenuItem
             // 
             this.downToolStripMenuItem.Name = "downToolStripMenuItem";
-            this.downToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.downToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.downToolStripMenuItem.Text = "Down";
             // 
             // loopSettingsToolStripMenuItem
@@ -357,12 +359,31 @@ namespace SoundBoard
             this.siticoneButton1.Text = "Yes";
             this.siticoneButton1.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 41);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Select Microphone";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(115, 38);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 13;
+            // 
             // SoundBoardd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(626, 546);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.siticoneShadowPanel1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.radioButton2);
@@ -421,6 +442,8 @@ namespace SoundBoard
         private System.Windows.Forms.Label label1;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton2;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 

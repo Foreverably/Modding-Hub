@@ -53,6 +53,7 @@ namespace ModdingHub
             ProcessStartInfo startInfo = new ProcessStartInfo();
             startInfo.FileName = "SoundBoard.exe";
             Process.Start(startInfo);
+            Close();
         }
     }
 }
