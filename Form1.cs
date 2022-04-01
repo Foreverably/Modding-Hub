@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -301,5 +302,22 @@ namespace OcuMods
             var flags = new ModdingHub.Launcher();
             flags.ShowDialog();
         }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Int16 version = Convert.ToInt16(Process.Start("https://github.com/DeadlyKitten/MonkeModManager/releases/latest"));
+            if (version > CurrentVersion)
+            {
+                this.Invoke((MethodInvoker)(() =>
+                {
+                    MessageBox.Show("Your version of the mod installer is outdated! Please download the new one!", "Update available!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    Process.Start("https://github.com/DeadlyKitten/MonkeModManager/releases/latest");
+                    Process.GetCurrentProcess().Kill();
+                    Environment.Exit(0);
+                }));
+            }
+        }
+
+       
     }
 }

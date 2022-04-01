@@ -82,7 +82,7 @@ namespace ModdingHub
             this.siticoneTileButton1.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.siticoneTileButton1.HoveredState.Parent = this.siticoneTileButton1;
             this.siticoneTileButton1.Image = global::ModdingHub.Properties.Resources.icons8_audio_channels_32;
-            this.siticoneTileButton1.Location = new System.Drawing.Point(53, 86);
+            this.siticoneTileButton1.Location = new System.Drawing.Point(47, 117);
             this.siticoneTileButton1.Name = "siticoneTileButton1";
             this.siticoneTileButton1.ShadowDecoration.Parent = this.siticoneTileButton1;
             this.siticoneTileButton1.Size = new System.Drawing.Size(195, 224);

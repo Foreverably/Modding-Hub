@@ -34,7 +34,6 @@ namespace SoundBoard
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveSoundboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportToWebToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otherToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,6 +63,9 @@ namespace SoundBoard
             this.siticoneButton1 = new Siticone.UI.WinForms.SiticoneButton();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.siticoneWinToggleSwith1 = new Siticone.UI.WinForms.SiticoneWinToggleSwith();
+            this.label4 = new System.Windows.Forms.Label();
+            this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.siticoneShadowPanel1.SuspendLayout();
@@ -85,7 +87,6 @@ namespace SoundBoard
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.saveSoundboardToolStripMenuItem,
-            this.exportToWebToolStripMenuItem,
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -95,25 +96,19 @@ namespace SoundBoard
             // saveSoundboardToolStripMenuItem
             // 
             this.saveSoundboardToolStripMenuItem.Name = "saveSoundboardToolStripMenuItem";
-            this.saveSoundboardToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.saveSoundboardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveSoundboardToolStripMenuItem.Text = "Save Soundboard";
-            // 
-            // exportToWebToolStripMenuItem
-            // 
-            this.exportToWebToolStripMenuItem.Name = "exportToWebToolStripMenuItem";
-            this.exportToWebToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
-            this.exportToWebToolStripMenuItem.Text = "Export to Web";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(163, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -134,7 +129,7 @@ namespace SoundBoard
             this.button3.TabIndex = 5;
             this.button3.Text = "Add Folder";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
@@ -148,7 +143,7 @@ namespace SoundBoard
             this.button2.TabIndex = 4;
             this.button2.Text = "Add File";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
@@ -162,7 +157,7 @@ namespace SoundBoard
             this.button1.TabIndex = 3;
             this.button1.Text = "Play Selected";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // radioButton1
             // 
@@ -173,7 +168,7 @@ namespace SoundBoard
             this.radioButton1.TabIndex = 7;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Loop Sound File";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.UseVisualStyleBackColor = false;
             // 
             // radioButton2
             // 
@@ -184,7 +179,7 @@ namespace SoundBoard
             this.radioButton2.TabIndex = 8;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Loop Each then Move to next";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.UseVisualStyleBackColor = false;
             // 
             // contextMenuStrip1
             // 
@@ -280,12 +275,23 @@ namespace SoundBoard
             // 
             // listBox1
             // 
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBox1.BackColor = System.Drawing.Color.White;
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBox1.ContextMenuStrip = this.contextMenuStrip1;
+            this.listBox1.ForeColor = System.Drawing.Color.Black;
             this.listBox1.FormattingEnabled = true;
+            this.listBox1.Items.AddRange(new object[] {
+            "e",
+            "e",
+            "e",
+            "e",
+            "e",
+            "e",
+            "e",
+            "e"});
             this.listBox1.Location = new System.Drawing.Point(12, 114);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(602, 353);
+            this.listBox1.Size = new System.Drawing.Size(602, 351);
             this.listBox1.TabIndex = 10;
             // 
             // siticoneShadowPanel1
@@ -301,7 +307,7 @@ namespace SoundBoard
             this.siticoneShadowPanel1.Name = "siticoneShadowPanel1";
             this.siticoneShadowPanel1.Radius = 3;
             this.siticoneShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.siticoneShadowPanel1.ShadowShift = 1;
+            this.siticoneShadowPanel1.ShadowShift = 0;
             this.siticoneShadowPanel1.Size = new System.Drawing.Size(261, 161);
             this.siticoneShadowPanel1.TabIndex = 11;
             this.siticoneShadowPanel1.Visible = false;
@@ -370,11 +376,33 @@ namespace SoundBoard
             // 
             // comboBox1
             // 
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(115, 38);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 13;
+            // 
+            // siticoneWinToggleSwith1
+            // 
+            this.siticoneWinToggleSwith1.Location = new System.Drawing.Point(557, 32);
+            this.siticoneWinToggleSwith1.Name = "siticoneWinToggleSwith1";
+            this.siticoneWinToggleSwith1.Size = new System.Drawing.Size(57, 22);
+            this.siticoneWinToggleSwith1.TabIndex = 14;
+            this.siticoneWinToggleSwith1.CheckedChanged += new System.EventHandler(this.siticoneWinToggleSwith1_CheckedChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(554, 57);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 13);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Dark Mode";
+            // 
+            // siticoneElipse1
+            // 
+            this.siticoneElipse1.TargetControl = this.listBox1;
             // 
             // SoundBoardd
             // 
@@ -382,6 +410,8 @@ namespace SoundBoard
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(626, 546);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.siticoneWinToggleSwith1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.siticoneShadowPanel1);
@@ -414,7 +444,6 @@ namespace SoundBoard
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveSoundboardToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exportToWebToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem otherToolStripMenuItem;
@@ -444,6 +473,9 @@ namespace SoundBoard
         private Siticone.UI.WinForms.SiticoneButton siticoneButton1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox1;
+        private Siticone.UI.WinForms.SiticoneWinToggleSwith siticoneWinToggleSwith1;
+        private System.Windows.Forms.Label label4;
+        private Siticone.UI.WinForms.SiticoneElipse siticoneElipse1;
     }
 }
 

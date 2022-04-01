@@ -32,6 +32,8 @@ namespace OcuMods
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.siticoneButton6 = new Siticone.UI.WinForms.SiticoneButton();
+            this.siticoneSeparator6 = new Siticone.UI.WinForms.SiticoneSeparator();
             this.siticoneSeparator3 = new Siticone.UI.WinForms.SiticoneSeparator();
             this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton2 = new Siticone.UI.WinForms.SiticoneButton();
@@ -39,7 +41,9 @@ namespace OcuMods
             this.siticoneButton1 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneSeparator1 = new Siticone.UI.WinForms.SiticoneSeparator();
             this.label18 = new System.Windows.Forms.Label();
+            this.siticonePictureBox3 = new Siticone.UI.WinForms.SiticonePictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.siticoneButton4 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneControlBox3 = new Siticone.UI.WinForms.SiticoneControlBox();
             this.siticoneControlBox1 = new Siticone.UI.WinForms.SiticoneControlBox();
             this.siticoneDragControl1 = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
@@ -64,8 +68,10 @@ namespace OcuMods
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.siticoneButton9 = new Siticone.UI.WinForms.SiticoneButton();
+            this.siticonePictureBox2 = new Siticone.UI.WinForms.SiticonePictureBox();
             this.siticoneButton8 = new Siticone.UI.WinForms.SiticoneButton();
             this.label10 = new System.Windows.Forms.Label();
+            this.siticonePictureBox1 = new Siticone.UI.WinForms.SiticonePictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Settings = new System.Windows.Forms.Panel();
             this.siticoneGroupBox3 = new Siticone.UI.WinForms.SiticoneGroupBox();
@@ -125,14 +131,9 @@ namespace OcuMods
             this.siticoneComboBox2 = new Siticone.UI.WinForms.SiticoneComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.siticoneToolTip1 = new Siticone.UI.WinForms.SiticoneToolTip();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.siticoneSeparator6 = new Siticone.UI.WinForms.SiticoneSeparator();
-            this.siticoneButton6 = new Siticone.UI.WinForms.SiticoneButton();
-            this.siticonePictureBox2 = new Siticone.UI.WinForms.SiticonePictureBox();
-            this.siticonePictureBox1 = new Siticone.UI.WinForms.SiticonePictureBox();
-            this.siticoneButton4 = new Siticone.UI.WinForms.SiticoneButton();
-            this.siticonePictureBox3 = new Siticone.UI.WinForms.SiticonePictureBox();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.Mods.SuspendLayout();
@@ -140,6 +141,8 @@ namespace OcuMods
             this.siticoneShadowPanel1.SuspendLayout();
             this.ContextMenu.SuspendLayout();
             this.VrHeadset.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
             this.Settings.SuspendLayout();
             this.siticoneGroupBox3.SuspendLayout();
             this.siticoneGroupBox2.SuspendLayout();
@@ -153,9 +156,6 @@ namespace OcuMods
             this.siticoneShadowPanel4.SuspendLayout();
             this.siticoneShadowPanel3.SuspendLayout();
             this.siticoneShadowPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -177,6 +177,34 @@ namespace OcuMods
             this.panel1.Size = new System.Drawing.Size(200, 581);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // siticoneButton6
+            // 
+            this.siticoneButton6.BorderRadius = 6;
+            this.siticoneButton6.CheckedState.Parent = this.siticoneButton6;
+            this.siticoneButton6.CustomImages.Parent = this.siticoneButton6;
+            this.siticoneButton6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.siticoneButton6.FillColor = System.Drawing.Color.Empty;
+            this.siticoneButton6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneButton6.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton6.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.siticoneButton6.HoveredState.Parent = this.siticoneButton6;
+            this.siticoneButton6.Location = new System.Drawing.Point(20, 230);
+            this.siticoneButton6.Name = "siticoneButton6";
+            this.siticoneButton6.ShadowDecoration.Parent = this.siticoneButton6;
+            this.siticoneButton6.Size = new System.Drawing.Size(160, 45);
+            this.siticoneButton6.TabIndex = 11;
+            this.siticoneButton6.Text = "Quick Launch";
+            this.siticoneButton6.Click += new System.EventHandler(this.siticoneButton6_Click_2);
+            // 
+            // siticoneSeparator6
+            // 
+            this.siticoneSeparator6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.siticoneSeparator6.FillColor = System.Drawing.Color.Transparent;
+            this.siticoneSeparator6.Location = new System.Drawing.Point(20, 220);
+            this.siticoneSeparator6.Name = "siticoneSeparator6";
+            this.siticoneSeparator6.Size = new System.Drawing.Size(160, 10);
+            this.siticoneSeparator6.TabIndex = 10;
             // 
             // siticoneSeparator3
             // 
@@ -276,6 +304,18 @@ namespace OcuMods
             this.label18.Text = "Modding Hub";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // siticonePictureBox3
+            // 
+            this.siticonePictureBox3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.siticonePictureBox3.Image = global::ModdingHub.Properties.Resources.icons8_oculus_rift_48;
+            this.siticonePictureBox3.Location = new System.Drawing.Point(20, 20);
+            this.siticonePictureBox3.Name = "siticonePictureBox3";
+            this.siticonePictureBox3.ShadowDecoration.Parent = this.siticonePictureBox3;
+            this.siticonePictureBox3.Size = new System.Drawing.Size(160, 36);
+            this.siticonePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.siticonePictureBox3.TabIndex = 9;
+            this.siticonePictureBox3.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.siticoneButton4);
@@ -287,6 +327,24 @@ namespace OcuMods
             this.panel2.Size = new System.Drawing.Size(939, 43);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // siticoneButton4
+            // 
+            this.siticoneButton4.CheckedState.Parent = this.siticoneButton4;
+            this.siticoneButton4.CustomImages.Parent = this.siticoneButton4;
+            this.siticoneButton4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.siticoneButton4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(30)))), ((int)(((byte)(32)))));
+            this.siticoneButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.siticoneButton4.ForeColor = System.Drawing.Color.White;
+            this.siticoneButton4.HoveredState.Parent = this.siticoneButton4;
+            this.siticoneButton4.Image = global::ModdingHub.Properties.Resources.icons8_oculus_rift_48;
+            this.siticoneButton4.Location = new System.Drawing.Point(804, 0);
+            this.siticoneButton4.Name = "siticoneButton4";
+            this.siticoneButton4.ShadowDecoration.Parent = this.siticoneButton4;
+            this.siticoneButton4.Size = new System.Drawing.Size(45, 43);
+            this.siticoneButton4.TabIndex = 3;
+            this.siticoneToolTip1.SetToolTip(this.siticoneButton4, "Select Oculus Mode or SteamVR Mode");
+            this.siticoneButton4.Click += new System.EventHandler(this.siticoneButton4_Click);
             // 
             // siticoneControlBox3
             // 
@@ -327,10 +385,10 @@ namespace OcuMods
             // panel3
             // 
             this.panel3.Controls.Add(this.statuslabel);
-            this.panel3.Controls.Add(this.Mods);
-            this.panel3.Controls.Add(this.VrHeadset);
             this.panel3.Controls.Add(this.Settings);
             this.panel3.Controls.Add(this.FileManager);
+            this.panel3.Controls.Add(this.Mods);
+            this.panel3.Controls.Add(this.VrHeadset);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(200, 43);
             this.panel3.Name = "panel3";
@@ -602,6 +660,18 @@ namespace OcuMods
             this.siticoneButton9.Text = "SteamVR/PCVR";
             this.siticoneButton9.Click += new System.EventHandler(this.siticoneButton9_Click);
             // 
+            // siticonePictureBox2
+            // 
+            this.siticonePictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.siticonePictureBox2.Image = global::ModdingHub.Properties.Resources.vr;
+            this.siticonePictureBox2.Location = new System.Drawing.Point(524, 157);
+            this.siticonePictureBox2.Name = "siticonePictureBox2";
+            this.siticonePictureBox2.ShadowDecoration.Parent = this.siticonePictureBox2;
+            this.siticonePictureBox2.Size = new System.Drawing.Size(153, 158);
+            this.siticonePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.siticonePictureBox2.TabIndex = 7;
+            this.siticonePictureBox2.TabStop = false;
+            // 
             // siticoneButton8
             // 
             this.siticoneButton8.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -634,6 +704,18 @@ namespace OcuMods
             this.label10.TabIndex = 3;
             this.label10.Text = "BETA";
             // 
+            // siticonePictureBox1
+            // 
+            this.siticonePictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.siticonePictureBox1.Image = global::ModdingHub.Properties.Resources.oculus_quest_2_frandroid_2020;
+            this.siticonePictureBox1.Location = new System.Drawing.Point(244, 157);
+            this.siticonePictureBox1.Name = "siticonePictureBox1";
+            this.siticonePictureBox1.ShadowDecoration.Parent = this.siticonePictureBox1;
+            this.siticonePictureBox1.Size = new System.Drawing.Size(153, 158);
+            this.siticonePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.siticonePictureBox1.TabIndex = 2;
+            this.siticonePictureBox1.TabStop = false;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -661,7 +743,7 @@ namespace OcuMods
             // 
             this.siticoneGroupBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(53)))));
             this.siticoneGroupBox3.BorderRadius = 6;
-            this.siticoneGroupBox3.Controls.Add(this.linkLabel2);
+            this.siticoneGroupBox3.Controls.Add(this.linkLabel3);
             this.siticoneGroupBox3.Controls.Add(this.linkLabel1);
             this.siticoneGroupBox3.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(53)))));
             this.siticoneGroupBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(30)))), ((int)(((byte)(32)))));
@@ -1101,7 +1183,7 @@ namespace OcuMods
             this.UExplorerPCDownloadbtn.ShadowDecoration.Parent = this.UExplorerPCDownloadbtn;
             this.UExplorerPCDownloadbtn.Size = new System.Drawing.Size(83, 45);
             this.UExplorerPCDownloadbtn.TabIndex = 6;
-            this.UExplorerPCDownloadbtn.Text = "Add to GTAG";
+            this.UExplorerPCDownloadbtn.Text = "Download";
             // 
             // siticoneRoundedButton10
             // 
@@ -1218,7 +1300,7 @@ namespace OcuMods
             this.CosmeticPCDownloadbtn.ShadowDecoration.Parent = this.CosmeticPCDownloadbtn;
             this.CosmeticPCDownloadbtn.Size = new System.Drawing.Size(83, 45);
             this.CosmeticPCDownloadbtn.TabIndex = 6;
-            this.CosmeticPCDownloadbtn.Text = "Add to GTAG";
+            this.CosmeticPCDownloadbtn.Text = "Download";
             this.CosmeticPCDownloadbtn.Click += new System.EventHandler(this.siticoneButton6_Click_1);
             // 
             // label17
@@ -1300,7 +1382,7 @@ namespace OcuMods
             this.UtillaPCDownloadbtn.ShadowDecoration.Parent = this.UtillaPCDownloadbtn;
             this.UtillaPCDownloadbtn.Size = new System.Drawing.Size(83, 45);
             this.UtillaPCDownloadbtn.TabIndex = 6;
-            this.UtillaPCDownloadbtn.Text = "Add to GTAG";
+            this.UtillaPCDownloadbtn.Text = "Download";
             this.UtillaPCDownloadbtn.Click += new System.EventHandler(this.UtillaPCDownloadbtn_Click);
             // 
             // siticoneRoundedButton6
@@ -1399,7 +1481,7 @@ namespace OcuMods
             this.siticoneButton7.ShadowDecoration.Parent = this.siticoneButton7;
             this.siticoneButton7.Size = new System.Drawing.Size(83, 45);
             this.siticoneButton7.TabIndex = 6;
-            this.siticoneButton7.Text = "Add to GTAG";
+            this.siticoneButton7.Text = "Download";
             this.siticoneButton7.Click += new System.EventHandler(this.siticoneButton7_Click);
             // 
             // siticoneRoundedButton2
@@ -1499,7 +1581,7 @@ namespace OcuMods
             this.PMonkePCDownloadbtn.ShadowDecoration.Parent = this.PMonkePCDownloadbtn;
             this.PMonkePCDownloadbtn.Size = new System.Drawing.Size(83, 45);
             this.PMonkePCDownloadbtn.TabIndex = 6;
-            this.PMonkePCDownloadbtn.Text = "Add to GTAG";
+            this.PMonkePCDownloadbtn.Text = "Download";
             this.PMonkePCDownloadbtn.Click += new System.EventHandler(this.siticoneButton6_Click);
             // 
             // siticoneRoundedButton1
@@ -1569,100 +1651,18 @@ namespace OcuMods
             this.siticoneToolTip1.AllowLinksHandling = true;
             this.siticoneToolTip1.MaximumSize = new System.Drawing.Size(0, 0);
             // 
-            // linkLabel2
+            // linkLabel3
             // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.linkLabel2.Location = new System.Drawing.Point(108, 54);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(51, 15);
-            this.linkLabel2.TabIndex = 1;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Releases";
-            this.linkLabel2.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
-            // 
-            // siticoneSeparator6
-            // 
-            this.siticoneSeparator6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.siticoneSeparator6.FillColor = System.Drawing.Color.Transparent;
-            this.siticoneSeparator6.Location = new System.Drawing.Point(20, 220);
-            this.siticoneSeparator6.Name = "siticoneSeparator6";
-            this.siticoneSeparator6.Size = new System.Drawing.Size(160, 10);
-            this.siticoneSeparator6.TabIndex = 10;
-            // 
-            // siticoneButton6
-            // 
-            this.siticoneButton6.BorderRadius = 6;
-            this.siticoneButton6.CheckedState.Parent = this.siticoneButton6;
-            this.siticoneButton6.CustomImages.Parent = this.siticoneButton6;
-            this.siticoneButton6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.siticoneButton6.FillColor = System.Drawing.Color.Empty;
-            this.siticoneButton6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneButton6.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton6.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.siticoneButton6.HoveredState.Parent = this.siticoneButton6;
-            this.siticoneButton6.Location = new System.Drawing.Point(20, 230);
-            this.siticoneButton6.Name = "siticoneButton6";
-            this.siticoneButton6.ShadowDecoration.Parent = this.siticoneButton6;
-            this.siticoneButton6.Size = new System.Drawing.Size(160, 45);
-            this.siticoneButton6.TabIndex = 11;
-            this.siticoneButton6.Text = "Quick Launch";
-            this.siticoneButton6.Click += new System.EventHandler(this.siticoneButton6_Click_2);
-            // 
-            // siticonePictureBox2
-            // 
-            this.siticonePictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.siticonePictureBox2.Image = global::ModdingHub.Properties.Resources.vr;
-            this.siticonePictureBox2.Location = new System.Drawing.Point(524, 157);
-            this.siticonePictureBox2.Name = "siticonePictureBox2";
-            this.siticonePictureBox2.ShadowDecoration.Parent = this.siticonePictureBox2;
-            this.siticonePictureBox2.Size = new System.Drawing.Size(153, 158);
-            this.siticonePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.siticonePictureBox2.TabIndex = 7;
-            this.siticonePictureBox2.TabStop = false;
-            // 
-            // siticonePictureBox1
-            // 
-            this.siticonePictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.siticonePictureBox1.Image = global::ModdingHub.Properties.Resources.oculus_quest_2_frandroid_2020;
-            this.siticonePictureBox1.Location = new System.Drawing.Point(244, 157);
-            this.siticonePictureBox1.Name = "siticonePictureBox1";
-            this.siticonePictureBox1.ShadowDecoration.Parent = this.siticonePictureBox1;
-            this.siticonePictureBox1.Size = new System.Drawing.Size(153, 158);
-            this.siticonePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.siticonePictureBox1.TabIndex = 2;
-            this.siticonePictureBox1.TabStop = false;
-            // 
-            // siticoneButton4
-            // 
-            this.siticoneButton4.CheckedState.Parent = this.siticoneButton4;
-            this.siticoneButton4.CustomImages.Parent = this.siticoneButton4;
-            this.siticoneButton4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.siticoneButton4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(30)))), ((int)(((byte)(32)))));
-            this.siticoneButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneButton4.ForeColor = System.Drawing.Color.White;
-            this.siticoneButton4.HoveredState.Parent = this.siticoneButton4;
-            this.siticoneButton4.Image = global::ModdingHub.Properties.Resources.icons8_oculus_rift_48;
-            this.siticoneButton4.Location = new System.Drawing.Point(804, 0);
-            this.siticoneButton4.Name = "siticoneButton4";
-            this.siticoneButton4.ShadowDecoration.Parent = this.siticoneButton4;
-            this.siticoneButton4.Size = new System.Drawing.Size(45, 43);
-            this.siticoneButton4.TabIndex = 3;
-            this.siticoneToolTip1.SetToolTip(this.siticoneButton4, "Select Oculus Mode or SteamVR Mode");
-            this.siticoneButton4.Click += new System.EventHandler(this.siticoneButton4_Click);
-            // 
-            // siticonePictureBox3
-            // 
-            this.siticonePictureBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.siticonePictureBox3.Image = global::ModdingHub.Properties.Resources.icons8_oculus_rift_48;
-            this.siticonePictureBox3.Location = new System.Drawing.Point(20, 20);
-            this.siticonePictureBox3.Name = "siticonePictureBox3";
-            this.siticonePictureBox3.ShadowDecoration.Parent = this.siticonePictureBox3;
-            this.siticonePictureBox3.Size = new System.Drawing.Size(160, 36);
-            this.siticonePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.siticonePictureBox3.TabIndex = 9;
-            this.siticonePictureBox3.TabStop = false;
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.linkLabel3.Location = new System.Drawing.Point(104, 54);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(104, 15);
+            this.linkLabel3.TabIndex = 2;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "Check for Updates";
+            this.linkLabel3.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
             // 
             // Form1
             // 
@@ -1681,6 +1681,7 @@ namespace OcuMods
             this.Text = "OcuMods";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -1692,6 +1693,8 @@ namespace OcuMods
             this.ContextMenu.ResumeLayout(false);
             this.VrHeadset.ResumeLayout(false);
             this.VrHeadset.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).EndInit();
             this.Settings.ResumeLayout(false);
             this.Settings.PerformLayout();
             this.siticoneGroupBox3.ResumeLayout(false);
@@ -1714,9 +1717,6 @@ namespace OcuMods
             this.siticoneShadowPanel3.PerformLayout();
             this.siticoneShadowPanel2.ResumeLayout(false);
             this.siticoneShadowPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1821,9 +1821,9 @@ namespace OcuMods
         private Siticone.UI.WinForms.SiticoneRoundedButton siticoneRoundedButton17;
         private Siticone.UI.WinForms.SiticoneSeparator siticoneSeparator4;
         private Siticone.UI.WinForms.SiticoneRoundedButton siticoneRoundedButton16;
-        private System.Windows.Forms.LinkLabel linkLabel2;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton6;
         private Siticone.UI.WinForms.SiticoneSeparator siticoneSeparator6;
+        private System.Windows.Forms.LinkLabel linkLabel3;
     }
 }
 
