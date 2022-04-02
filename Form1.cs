@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -88,6 +89,8 @@ namespace OcuMods
                                                          uint cbAttribute);
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+
             string oculuspath = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "Settings\\QuestVRQmod");
             string steampath = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "Settings\\SteamVRdll");
             if (File.Exists(steampath))
@@ -308,19 +311,7 @@ namespace OcuMods
 
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Int16 version = Convert.ToInt16(Process.Start("https://github.com/DeadlyKitten/MonkeModManager/releases/latest"));
-            if (version > CurrentVersion)
-            {
-                this.Invoke((MethodInvoker)(() =>
-                {
-                    MessageBox.Show("Your version of the mod installer is outdated! Please download the new one!", "Update available!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    Process.Start("https://github.com/DeadlyKitten/MonkeModManager/releases/latest");
-                    Process.GetCurrentProcess().Kill();
-                    Environment.Exit(0);
-                }));
-            }
+           
         }
-
-       
     }
 }
