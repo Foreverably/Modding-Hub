@@ -104,7 +104,6 @@ namespace OcuMods
             this.siticoneRoundedButton3 = new Siticone.UI.WinForms.SiticoneRoundedButton();
             this.label7 = new System.Windows.Forms.Label();
             this.PMonkePCDownloadbtn = new Siticone.UI.WinForms.SiticoneButton();
-            this.siticoneRoundedButton1 = new Siticone.UI.WinForms.SiticoneRoundedButton();
             this.label1 = new System.Windows.Forms.Label();
             this.siticoneComboBox2 = new Siticone.UI.WinForms.SiticoneComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -690,10 +689,10 @@ namespace OcuMods
             this.panel5.Controls.Add(this.siticoneRoundedButton11);
             this.panel5.Controls.Add(this.label23);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(696, 0);
+            this.panel5.Location = new System.Drawing.Point(645, 0);
             this.panel5.Name = "panel5";
             this.panel5.Padding = new System.Windows.Forms.Padding(10);
-            this.panel5.Size = new System.Drawing.Size(100, 877);
+            this.panel5.Size = new System.Drawing.Size(151, 877);
             this.panel5.TabIndex = 11;
             // 
             // siticoneRoundedButton15
@@ -712,7 +711,7 @@ namespace OcuMods
             this.siticoneRoundedButton15.PressedColor = System.Drawing.Color.MediumSlateBlue;
             this.siticoneRoundedButton15.PressedDepth = 100;
             this.siticoneRoundedButton15.ShadowDecoration.Parent = this.siticoneRoundedButton15;
-            this.siticoneRoundedButton15.Size = new System.Drawing.Size(80, 24);
+            this.siticoneRoundedButton15.Size = new System.Drawing.Size(131, 24);
             this.siticoneRoundedButton15.TabIndex = 13;
             this.siticoneRoundedButton15.Text = "SteamVR";
             // 
@@ -732,7 +731,7 @@ namespace OcuMods
             this.siticoneRoundedButton14.PressedColor = System.Drawing.Color.Gray;
             this.siticoneRoundedButton14.PressedDepth = 100;
             this.siticoneRoundedButton14.ShadowDecoration.Parent = this.siticoneRoundedButton14;
-            this.siticoneRoundedButton14.Size = new System.Drawing.Size(80, 24);
+            this.siticoneRoundedButton14.Size = new System.Drawing.Size(131, 24);
             this.siticoneRoundedButton14.TabIndex = 12;
             this.siticoneRoundedButton14.Text = "All Platforms";
             // 
@@ -752,7 +751,7 @@ namespace OcuMods
             this.siticoneRoundedButton13.PressedColor = System.Drawing.Color.Goldenrod;
             this.siticoneRoundedButton13.PressedDepth = 100;
             this.siticoneRoundedButton13.ShadowDecoration.Parent = this.siticoneRoundedButton13;
-            this.siticoneRoundedButton13.Size = new System.Drawing.Size(80, 24);
+            this.siticoneRoundedButton13.Size = new System.Drawing.Size(131, 24);
             this.siticoneRoundedButton13.TabIndex = 11;
             this.siticoneRoundedButton13.Text = "Modded";
             // 
@@ -772,7 +771,7 @@ namespace OcuMods
             this.siticoneRoundedButton12.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.siticoneRoundedButton12.PressedDepth = 100;
             this.siticoneRoundedButton12.ShadowDecoration.Parent = this.siticoneRoundedButton12;
-            this.siticoneRoundedButton12.Size = new System.Drawing.Size(80, 24);
+            this.siticoneRoundedButton12.Size = new System.Drawing.Size(131, 24);
             this.siticoneRoundedButton12.TabIndex = 10;
             this.siticoneRoundedButton12.Text = "Private";
             // 
@@ -792,7 +791,7 @@ namespace OcuMods
             this.siticoneRoundedButton11.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.siticoneRoundedButton11.PressedDepth = 100;
             this.siticoneRoundedButton11.ShadowDecoration.Parent = this.siticoneRoundedButton11;
-            this.siticoneRoundedButton11.Size = new System.Drawing.Size(80, 24);
+            this.siticoneRoundedButton11.Size = new System.Drawing.Size(131, 24);
             this.siticoneRoundedButton11.TabIndex = 2;
             this.siticoneRoundedButton11.Text = "Public";
             // 
@@ -802,7 +801,7 @@ namespace OcuMods
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(10, 10);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(80, 37);
+            this.label23.Size = new System.Drawing.Size(131, 37);
             this.label23.TabIndex = 9;
             this.label23.Text = "Tags";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1212,7 +1211,6 @@ namespace OcuMods
             this.siticoneShadowPanel2.Controls.Add(this.siticoneRoundedButton3);
             this.siticoneShadowPanel2.Controls.Add(this.label7);
             this.siticoneShadowPanel2.Controls.Add(this.PMonkePCDownloadbtn);
-            this.siticoneShadowPanel2.Controls.Add(this.siticoneRoundedButton1);
             this.siticoneShadowPanel2.Controls.Add(this.label1);
             this.siticoneShadowPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(50)))), ((int)(((byte)(52)))));
             this.siticoneShadowPanel2.Location = new System.Drawing.Point(16, 48);
@@ -1230,19 +1228,19 @@ namespace OcuMods
             this.siticoneRoundedButton3.Animated = false;
             this.siticoneRoundedButton3.CheckedState.Parent = this.siticoneRoundedButton3;
             this.siticoneRoundedButton3.CustomImages.Parent = this.siticoneRoundedButton3;
-            this.siticoneRoundedButton3.FillColor = System.Drawing.Color.MediumSlateBlue;
+            this.siticoneRoundedButton3.FillColor = System.Drawing.Color.Blue;
             this.siticoneRoundedButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneRoundedButton3.ForeColor = System.Drawing.Color.White;
             this.siticoneRoundedButton3.HoveredState.FillColor = System.Drawing.Color.MediumSlateBlue;
             this.siticoneRoundedButton3.HoveredState.Parent = this.siticoneRoundedButton3;
-            this.siticoneRoundedButton3.Location = new System.Drawing.Point(84, 221);
+            this.siticoneRoundedButton3.Location = new System.Drawing.Point(27, 221);
             this.siticoneRoundedButton3.Name = "siticoneRoundedButton3";
             this.siticoneRoundedButton3.PressedColor = System.Drawing.Color.MediumSlateBlue;
             this.siticoneRoundedButton3.PressedDepth = 100;
             this.siticoneRoundedButton3.ShadowDecoration.Parent = this.siticoneRoundedButton3;
             this.siticoneRoundedButton3.Size = new System.Drawing.Size(69, 24);
             this.siticoneRoundedButton3.TabIndex = 8;
-            this.siticoneRoundedButton3.Text = "SteamVR";
+            this.siticoneRoundedButton3.Text = "?";
             // 
             // label7
             // 
@@ -1255,8 +1253,7 @@ namespace OcuMods
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(235, 137);
             this.label7.TabIndex = 7;
-            this.label7.Text = "Platform Monke is a working version of airjump 0.2, this version was made by Mang" +
-    "o_\r\n\r\nWorking in version 1.1.19";
+            this.label7.Text = "New one is coming soon";
             // 
             // PMonkePCDownloadbtn
             // 
@@ -1277,25 +1274,6 @@ namespace OcuMods
             this.PMonkePCDownloadbtn.TabIndex = 6;
             this.PMonkePCDownloadbtn.Text = "Disabled by Regulations";
             this.PMonkePCDownloadbtn.Click += new System.EventHandler(this.siticoneButton6_Click);
-            // 
-            // siticoneRoundedButton1
-            // 
-            this.siticoneRoundedButton1.Animated = false;
-            this.siticoneRoundedButton1.CheckedState.Parent = this.siticoneRoundedButton1;
-            this.siticoneRoundedButton1.CustomImages.Parent = this.siticoneRoundedButton1;
-            this.siticoneRoundedButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneRoundedButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneRoundedButton1.ForeColor = System.Drawing.Color.White;
-            this.siticoneRoundedButton1.HoveredState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneRoundedButton1.HoveredState.Parent = this.siticoneRoundedButton1;
-            this.siticoneRoundedButton1.Location = new System.Drawing.Point(23, 221);
-            this.siticoneRoundedButton1.Name = "siticoneRoundedButton1";
-            this.siticoneRoundedButton1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.siticoneRoundedButton1.PressedDepth = 100;
-            this.siticoneRoundedButton1.ShadowDecoration.Parent = this.siticoneRoundedButton1;
-            this.siticoneRoundedButton1.Size = new System.Drawing.Size(55, 24);
-            this.siticoneRoundedButton1.TabIndex = 1;
-            this.siticoneRoundedButton1.Text = "Private";
             // 
             // label1
             // 
@@ -1759,7 +1737,6 @@ namespace OcuMods
         private System.Windows.Forms.Panel marketwebsite;
         private System.Windows.Forms.Panel gtagmodmarket;
         private Siticone.UI.WinForms.SiticoneShadowPanel siticoneShadowPanel2;
-        private Siticone.UI.WinForms.SiticoneRoundedButton siticoneRoundedButton1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private Siticone.UI.WinForms.SiticoneButton PMonkePCDownloadbtn;

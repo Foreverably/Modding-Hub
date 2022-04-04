@@ -190,8 +190,7 @@ namespace OcuMods
 
         private void siticoneButton6_Click(object sender, EventArgs e)
         {
-            UpdateStatus("Downloading Platform Monke");
-            System.Diagnostics.Process.Start("https://cdn.discordapp.com/attachments/953830146442420237/954103722961682542/PlatformMonke.dll");
+            UpdateStatus("Failed to download");
         }
 
         private void siticoneButton8_Click(object sender, EventArgs e)
