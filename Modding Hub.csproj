@@ -145,6 +145,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons8_oculus_rift.ico" />
+    <None Include="Resources\icons8_money_32.png" />
+    <None Include="Resources\icons8_oculus_rift_32.png" />
     <None Include="Resources\icons8_audio_channels_32.png" />
     <None Include="Resources\icons8_search_48.png" />
     <None Include="Resources\icons8_search_322.png" />

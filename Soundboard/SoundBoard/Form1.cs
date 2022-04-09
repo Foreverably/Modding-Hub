@@ -46,16 +46,7 @@ namespace SoundBoard
 
         private void siticoneWinToggleSwith1_CheckedChanged(object sender, EventArgs e)
         {
-            if (siticoneWinToggleSwith1.Checked == true)
-            {
-                BackColor = Color.FromArgb(28, 30, 32);
-                ForeColor = Color.White;
-            }
-            else
-            {
-                BackColor = Color.White;
-                ForeColor = Color.Black;
-            }
+           
         }
     }
 }

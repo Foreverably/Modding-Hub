@@ -62,6 +62,11 @@ namespace OcuMods
                     CosmeticPCDownloadbtn.Enabled = false;
                     CosmeticPCDownloadbtn.Text = "Requires SteamVR";
                 }
+                if (formattedText == "MML")
+                {
+                    MMPpcDownloadbtn.Enabled = false;
+                    MMPpcDownloadbtn.Text = "Requires SteamVR";
+                }
             }));
         }
 
@@ -106,6 +111,7 @@ namespace OcuMods
                 DisableButton("Utilla");
                 DisableButton("UnityExplorer");
                 DisableButton("GCosmetics");
+                DisableButton("MML");
             }
             else
             {
@@ -311,6 +317,24 @@ namespace OcuMods
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
            
+        }
+
+        private void siticoneButton15_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/Vadix88/MonkeMapLoader/releases/download/1.1.4/MonkeMapLoader-1.1.4.zip");
+        }
+
+        private void siticoneShadowPanel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void siticoneButton13_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "SoundBoard.exe";
+            Process.Start(startInfo);
+            Close();
         }
     }
 }

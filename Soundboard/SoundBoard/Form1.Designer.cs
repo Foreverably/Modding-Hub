@@ -63,8 +63,6 @@ namespace SoundBoard
             this.siticoneButton1 = new Siticone.UI.WinForms.SiticoneButton();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.siticoneWinToggleSwith1 = new Siticone.UI.WinForms.SiticoneWinToggleSwith();
-            this.label4 = new System.Windows.Forms.Label();
             this.siticoneElipse1 = new Siticone.UI.WinForms.SiticoneElipse(this.components);
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -73,6 +71,7 @@ namespace SoundBoard
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.otherToolStripMenuItem});
@@ -96,19 +95,19 @@ namespace SoundBoard
             // saveSoundboardToolStripMenuItem
             // 
             this.saveSoundboardToolStripMenuItem.Name = "saveSoundboardToolStripMenuItem";
-            this.saveSoundboardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveSoundboardToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.saveSoundboardToolStripMenuItem.Text = "Save Soundboard";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(163, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -303,12 +302,12 @@ namespace SoundBoard
             this.siticoneShadowPanel1.Controls.Add(this.siticoneButton1);
             this.siticoneShadowPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(30)))), ((int)(((byte)(32)))));
             this.siticoneShadowPanel1.ForeColor = System.Drawing.Color.White;
-            this.siticoneShadowPanel1.Location = new System.Drawing.Point(183, 193);
+            this.siticoneShadowPanel1.Location = new System.Drawing.Point(173, 192);
             this.siticoneShadowPanel1.Name = "siticoneShadowPanel1";
-            this.siticoneShadowPanel1.Radius = 3;
+            this.siticoneShadowPanel1.Radius = 6;
             this.siticoneShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.siticoneShadowPanel1.ShadowShift = 0;
-            this.siticoneShadowPanel1.Size = new System.Drawing.Size(261, 161);
+            this.siticoneShadowPanel1.Size = new System.Drawing.Size(304, 161);
             this.siticoneShadowPanel1.TabIndex = 11;
             this.siticoneShadowPanel1.Visible = false;
             // 
@@ -341,7 +340,7 @@ namespace SoundBoard
             this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton2.ForeColor = System.Drawing.Color.White;
             this.siticoneButton2.HoveredState.Parent = this.siticoneButton2;
-            this.siticoneButton2.Location = new System.Drawing.Point(103, 113);
+            this.siticoneButton2.Location = new System.Drawing.Point(157, 110);
             this.siticoneButton2.Name = "siticoneButton2";
             this.siticoneButton2.ShadowDecoration.Parent = this.siticoneButton2;
             this.siticoneButton2.Size = new System.Drawing.Size(65, 35);
@@ -357,7 +356,7 @@ namespace SoundBoard
             this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton1.ForeColor = System.Drawing.Color.White;
             this.siticoneButton1.HoveredState.Parent = this.siticoneButton1;
-            this.siticoneButton1.Location = new System.Drawing.Point(174, 113);
+            this.siticoneButton1.Location = new System.Drawing.Point(228, 110);
             this.siticoneButton1.Name = "siticoneButton1";
             this.siticoneButton1.ShadowDecoration.Parent = this.siticoneButton1;
             this.siticoneButton1.Size = new System.Drawing.Size(65, 35);
@@ -383,23 +382,6 @@ namespace SoundBoard
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 13;
             // 
-            // siticoneWinToggleSwith1
-            // 
-            this.siticoneWinToggleSwith1.Location = new System.Drawing.Point(557, 32);
-            this.siticoneWinToggleSwith1.Name = "siticoneWinToggleSwith1";
-            this.siticoneWinToggleSwith1.Size = new System.Drawing.Size(57, 22);
-            this.siticoneWinToggleSwith1.TabIndex = 14;
-            this.siticoneWinToggleSwith1.CheckedChanged += new System.EventHandler(this.siticoneWinToggleSwith1_CheckedChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(554, 57);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 13);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Dark Mode";
-            // 
             // siticoneElipse1
             // 
             this.siticoneElipse1.TargetControl = this.listBox1;
@@ -410,8 +392,6 @@ namespace SoundBoard
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(626, 546);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.siticoneWinToggleSwith1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.siticoneShadowPanel1);
@@ -473,8 +453,6 @@ namespace SoundBoard
         private Siticone.UI.WinForms.SiticoneButton siticoneButton1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox1;
-        private Siticone.UI.WinForms.SiticoneWinToggleSwith siticoneWinToggleSwith1;
-        private System.Windows.Forms.Label label4;
         private Siticone.UI.WinForms.SiticoneElipse siticoneElipse1;
     }
 }
