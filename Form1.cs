@@ -336,5 +336,10 @@ namespace OcuMods
             Process.Start(startInfo);
             Close();
         }
+
+        private void rickrollToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://youtu.be/dQw4w9WgXcQ");
+        }
     }
 }

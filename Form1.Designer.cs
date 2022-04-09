@@ -29,7 +29,6 @@ namespace OcuMods
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.siticoneSeparator6 = new Siticone.UI.WinForms.SiticoneSeparator();
@@ -45,8 +44,8 @@ namespace OcuMods
             this.siticoneButton4 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneControlBox3 = new Siticone.UI.WinForms.SiticoneControlBox();
             this.siticoneControlBox1 = new Siticone.UI.WinForms.SiticoneControlBox();
-            this.siticoneDragControl1 = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
-            this.siticoneDragControl2 = new Siticone.UI.WinForms.SiticoneDragControl(this.components);
+            this.siticoneDragControl1 = new Siticone.UI.WinForms.SiticoneDragControl();
+            this.siticoneDragControl2 = new Siticone.UI.WinForms.SiticoneDragControl();
             this.panel3 = new System.Windows.Forms.Panel();
             this.statuslabel = new System.Windows.Forms.Label();
             this.FileManager = new System.Windows.Forms.Panel();
@@ -131,12 +130,13 @@ namespace OcuMods
             this.siticoneButton12 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton11 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneGroupBox1 = new Siticone.UI.WinForms.SiticoneGroupBox();
-            this.label19 = new System.Windows.Forms.Label();
             this.siticoneButton10 = new Siticone.UI.WinForms.SiticoneButton();
             this.FileExtensionthing = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.siticoneToolTip1 = new Siticone.UI.WinForms.SiticoneToolTip();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.rickrollToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
@@ -162,6 +162,7 @@ namespace OcuMods
             this.siticoneGroupBox3.SuspendLayout();
             this.siticoneGroupBox2.SuspendLayout();
             this.siticoneGroupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -390,9 +391,9 @@ namespace OcuMods
             this.statuslabel.AutoSize = true;
             this.statuslabel.Location = new System.Drawing.Point(28, 516);
             this.statuslabel.Name = "statuslabel";
-            this.statuslabel.Size = new System.Drawing.Size(67, 13);
+            this.statuslabel.Size = new System.Drawing.Size(38, 13);
             this.statuslabel.TabIndex = 1;
-            this.statuslabel.Text = "no status yet";
+            this.statuslabel.Text = "{soon}";
             this.statuslabel.Visible = false;
             // 
             // FileManager
@@ -1592,6 +1593,7 @@ namespace OcuMods
             this.siticoneGroupBox2.Controls.Add(this.siticoneButton13);
             this.siticoneGroupBox2.Controls.Add(this.siticoneButton12);
             this.siticoneGroupBox2.Controls.Add(this.siticoneButton11);
+            this.siticoneGroupBox2.Controls.Add(this.menuStrip1);
             this.siticoneGroupBox2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(53)))));
             this.siticoneGroupBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(30)))), ((int)(((byte)(32)))));
             this.siticoneGroupBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -1683,7 +1685,6 @@ namespace OcuMods
             // 
             this.siticoneGroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(51)))), ((int)(((byte)(53)))));
             this.siticoneGroupBox1.BorderRadius = 6;
-            this.siticoneGroupBox1.Controls.Add(this.label19);
             this.siticoneGroupBox1.Controls.Add(this.siticoneButton10);
             this.siticoneGroupBox1.Controls.Add(this.FileExtensionthing);
             this.siticoneGroupBox1.Controls.Add(this.label13);
@@ -1697,15 +1698,6 @@ namespace OcuMods
             this.siticoneGroupBox1.Size = new System.Drawing.Size(313, 243);
             this.siticoneGroupBox1.TabIndex = 2;
             this.siticoneGroupBox1.Text = "Virtual reality mode";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(22, 146);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(188, 15);
-            this.label19.TabIndex = 7;
-            this.label19.Text = "More Settings for VR coming soon";
             // 
             // siticoneButton10
             // 
@@ -1758,6 +1750,27 @@ namespace OcuMods
             this.siticoneToolTip1.AllowLinksHandling = true;
             this.siticoneToolTip1.MaximumSize = new System.Drawing.Size(0, 0);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rickrollToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(299, 24);
+            this.menuStrip1.TabIndex = 10;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.Visible = false;
+            // 
+            // rickrollToolStripMenuItem
+            // 
+            this.rickrollToolStripMenuItem.Name = "rickrollToolStripMenuItem";
+            this.rickrollToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
+            | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.F)));
+            this.rickrollToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.rickrollToolStripMenuItem.Text = "Rickroll";
+            this.rickrollToolStripMenuItem.Click += new System.EventHandler(this.rickrollToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1770,6 +1783,7 @@ namespace OcuMods
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OcuMods";
@@ -1811,8 +1825,11 @@ namespace OcuMods
             this.siticoneGroupBox3.ResumeLayout(false);
             this.siticoneGroupBox3.PerformLayout();
             this.siticoneGroupBox2.ResumeLayout(false);
+            this.siticoneGroupBox2.PerformLayout();
             this.siticoneGroupBox1.ResumeLayout(false);
             this.siticoneGroupBox1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1889,7 +1906,6 @@ namespace OcuMods
         private Siticone.UI.WinForms.SiticonePictureBox siticonePictureBox3;
         private Siticone.UI.WinForms.SiticoneGroupBox siticoneGroupBox2;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton11;
-        private System.Windows.Forms.Label label19;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton10;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton12;
         private Siticone.UI.WinForms.SiticoneButton siticoneButton14;
@@ -1925,6 +1941,8 @@ namespace OcuMods
         private Siticone.UI.WinForms.SiticoneRoundedButton siticoneRoundedButton18;
         private System.Windows.Forms.Label label25;
         private Siticone.UI.WinForms.SiticoneRoundedButton siticoneRoundedButton19;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem rickrollToolStripMenuItem;
     }
 }
 

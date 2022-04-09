@@ -95,19 +95,20 @@ namespace SoundBoard
             // saveSoundboardToolStripMenuItem
             // 
             this.saveSoundboardToolStripMenuItem.Name = "saveSoundboardToolStripMenuItem";
-            this.saveSoundboardToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.saveSoundboardToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveSoundboardToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.saveSoundboardToolStripMenuItem.Text = "Save Soundboard";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(163, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(203, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -279,15 +280,6 @@ namespace SoundBoard
             this.listBox1.ContextMenuStrip = this.contextMenuStrip1;
             this.listBox1.ForeColor = System.Drawing.Color.Black;
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
-            "e",
-            "e",
-            "e",
-            "e",
-            "e",
-            "e",
-            "e",
-            "e"});
             this.listBox1.Location = new System.Drawing.Point(12, 114);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(602, 351);
@@ -307,7 +299,7 @@ namespace SoundBoard
             this.siticoneShadowPanel1.Radius = 6;
             this.siticoneShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.siticoneShadowPanel1.ShadowShift = 0;
-            this.siticoneShadowPanel1.Size = new System.Drawing.Size(304, 161);
+            this.siticoneShadowPanel1.Size = new System.Drawing.Size(304, 197);
             this.siticoneShadowPanel1.TabIndex = 11;
             this.siticoneShadowPanel1.Visible = false;
             // 
@@ -317,9 +309,9 @@ namespace SoundBoard
             this.label2.Font = new System.Drawing.Font("Segoe UI Variable Small", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(43, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 45);
+            this.label2.Size = new System.Drawing.Size(152, 45);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Exiting can cause loss in data\r\n\r\nso make sure to save your files!";
+            this.label2.Text = "Save your files as a .fbsound\r\n\r\ncontinue?";
             // 
             // label1
             // 
@@ -340,7 +332,7 @@ namespace SoundBoard
             this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton2.ForeColor = System.Drawing.Color.White;
             this.siticoneButton2.HoveredState.Parent = this.siticoneButton2;
-            this.siticoneButton2.Location = new System.Drawing.Point(157, 110);
+            this.siticoneButton2.Location = new System.Drawing.Point(155, 148);
             this.siticoneButton2.Name = "siticoneButton2";
             this.siticoneButton2.ShadowDecoration.Parent = this.siticoneButton2;
             this.siticoneButton2.Size = new System.Drawing.Size(65, 35);
@@ -356,7 +348,7 @@ namespace SoundBoard
             this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.siticoneButton1.ForeColor = System.Drawing.Color.White;
             this.siticoneButton1.HoveredState.Parent = this.siticoneButton1;
-            this.siticoneButton1.Location = new System.Drawing.Point(228, 110);
+            this.siticoneButton1.Location = new System.Drawing.Point(226, 148);
             this.siticoneButton1.Name = "siticoneButton1";
             this.siticoneButton1.ShadowDecoration.Parent = this.siticoneButton1;
             this.siticoneButton1.Size = new System.Drawing.Size(65, 35);
