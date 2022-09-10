@@ -63,6 +63,36 @@ namespace ModdingHub.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_audio_channels_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_audio_channels_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_money_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_money_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_oculus_rift_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_oculus_rift_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_oculus_rift_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8_oculus_rift_48", resourceCulture);

@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +17,9 @@ namespace OcuMods
 {
     public partial class Form1 : Form
     {
+
+        private const Int16 CurrentVersion = 1;
+
         public Form1()
         {
             InitializeComponent();
@@ -57,6 +62,11 @@ namespace OcuMods
                     CosmeticPCDownloadbtn.Enabled = false;
                     CosmeticPCDownloadbtn.Text = "Requires SteamVR";
                 }
+                if (formattedText == "MML")
+                {
+                    MMPpcDownloadbtn.Enabled = false;
+                    MMPpcDownloadbtn.Text = "Requires SteamVR";
+                }
             }));
         }
 
@@ -84,6 +94,8 @@ namespace OcuMods
                                                          uint cbAttribute);
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+
             string oculuspath = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "Settings\\QuestVRQmod");
             string steampath = Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "Settings\\SteamVRdll");
             if (File.Exists(steampath))
@@ -99,6 +111,12 @@ namespace OcuMods
                 DisableButton("Utilla");
                 DisableButton("UnityExplorer");
                 DisableButton("GCosmetics");
+                DisableButton("MML");
+            }
+            else
+            {
+                VrHeadset.BringToFront();
+                MessageBox.Show("Select your VR Type then restart the application");
             }
         }
 
@@ -178,8 +196,7 @@ namespace OcuMods
 
         private void siticoneButton6_Click(object sender, EventArgs e)
         {
-            UpdateStatus("Downloading Platform Monke");
-            System.Diagnostics.Process.Start("https://cdn.discordapp.com/attachments/953830146442420237/954103722961682542/PlatformMonke.dll");
+            UpdateStatus("Failed to download");
         }
 
         private void siticoneButton8_Click(object sender, EventArgs e)
@@ -279,6 +296,50 @@ namespace OcuMods
         private void listView1_Click(object sender, EventArgs e)
         {
             ContextMenu.Visible = false;
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Foreverably/Modding-Hub/releases");
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void siticoneButton6_Click_2(object sender, EventArgs e)
+        {
+            var flags = new ModdingHub.Launcher();
+            flags.ShowDialog();
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+           
+        }
+
+        private void siticoneButton15_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/Vadix88/MonkeMapLoader/releases/download/1.1.4/MonkeMapLoader-1.1.4.zip");
+        }
+
+        private void siticoneShadowPanel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void siticoneButton13_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "SoundBoard.exe";
+            Process.Start(startInfo);
+            Close();
+        }
+
+        private void rickrollToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://youtu.be/dQw4w9WgXcQ");
         }
     }
 }
